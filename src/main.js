@@ -6,6 +6,10 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 
+//引入样式文件
+import '@/styles/common.scss'
+
+
 import { getCategory } from './apis/testAPI'
 
 getCategory().then(res =>{

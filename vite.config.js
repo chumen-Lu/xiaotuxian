@@ -40,6 +40,6 @@ export default defineConfig({
           @use "@/styles/element/index.scss" as *;
         `,
       }
-    }
+    } 
   }
 })
