@@ -9,11 +9,11 @@ import router from './router'
 import '@/styles/common.scss'
 
 
-import { getCategory } from './apis/testAPI'
+// import { getCategory } from './apis/testAPI'
 
-getCategory().then(res =>{
-    console.log(res);
-})
+// getCategory().then(res =>{
+//     console.log(res);
+// })
 
 const app = createApp(App)
 
