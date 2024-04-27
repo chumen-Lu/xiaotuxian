@@ -9,13 +9,7 @@ import '@/styles/common.scss'
 
 //引入lazyPlugin插件
 import { lazyPlugin } from '@/directives'
-
-
-// import { getCategory } from './apis/testAPI'
-
-// getCategory().then(res =>{
-//     console.log(res);
-// })
+import {componentPlugin} from '@/components'
 
 const app = createApp(App)
 
@@ -23,5 +17,7 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router)
 app.use(lazyPlugin)
+app.use(componentPlugin)
 app.mount('#app')
 
+ 

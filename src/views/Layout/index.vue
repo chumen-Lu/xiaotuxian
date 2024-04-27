@@ -18,6 +18,8 @@ onMounted(() => categoryStore.getCategory())
     <LayoutFixed />
     <LayoutNav />
     <LayoutHeader />
+    <!-- 销毁重建 -->
+    <!-- <RouterView :key="$route.fullpath"/> -->
     <RouterView />
     <LayoutFooter />
 </template>
