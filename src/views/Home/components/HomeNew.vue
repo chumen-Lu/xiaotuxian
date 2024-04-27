@@ -3,7 +3,6 @@ import HomePanel from './HomePanel.vue';
 import { findNewAPI } from '@/apis/home'
 import { onMounted,ref } from 'vue'
 
-
 const newList = ref ([])
 
 const getNewList = async () => {
@@ -26,11 +25,7 @@ onMounted(() => getNewList())
       </RouterLink>
     </li>
   </ul>
-
   </HomePanel>
-  <!-- 下面是插槽主体内容模版
-  
-  -->
 </template>
 
 
