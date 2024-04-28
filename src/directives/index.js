@@ -2,6 +2,7 @@ import { useIntersectionObserver } from '@vueuse/core'
 
 export const lazyPlugin = {
     install(app){
+        // 懒加载
         app.directive('img-lazy', {
             mounted(el, binding) {
                 console.log(el, binding.value)

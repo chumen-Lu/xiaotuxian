@@ -1,5 +1,7 @@
 // axios基础封装
 import axios from "axios";
+import 'element-plus/theme-chalk/el-message.css'
+import { ElMessage } from 'element-plus'
 
 
 const httpInstance = axios.create({
@@ -16,6 +18,10 @@ httpInstance.interceptors.request.use(config => {
   
 // axios响应式拦截器
 httpInstance.interceptors.response.use(res => res.data, e => {
+    ElMessage({
+        type:'warning',
+        message:e.response.data.message
+    })
     return Promise.reject(e)
 })
 
