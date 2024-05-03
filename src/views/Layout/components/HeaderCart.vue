@@ -17,7 +17,7 @@ const cartStore = useCartStore()
             <div class="center">
               <p class="name ellipsis-2">
                 {{ i.name }}
-              </p>
+              </p>n
               <p class="attr ellipsis">{{ i.attrsText }}</p>
             </div>
             <div class="right">
@@ -31,8 +31,8 @@ const cartStore = useCartStore()
       </div>
       <div class="foot">
         <div class="total">
-          <p>共 10 件商品</p>
-          <p>&yen; 100.00 </p>
+          <p>共 {{ cartStore.allCount }} 件商品</p>
+          <p>&yen; {{ cartStore.allPrice }} </p>
         </div>
         <el-button size="large" type="primary" >去购物车结算</el-button>
       </div>
