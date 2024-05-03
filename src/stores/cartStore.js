@@ -17,10 +17,18 @@ export const useCartStore = defineStore('cart',() => {
       // 没找到
       cartList.value.push(goods)
     }
-    }
+  }
+  // 删除
+  const delCart = (skuId) => {
+    const idx = cartList.value.findIndex((item) => skuId === item.skuId)
+    cartList.value.splice(idx,1)
+  }
+
+
     return{ 
         cartList,
-        addCart
+        addCart,
+        delCart
     }
 },{
     persist:true,
